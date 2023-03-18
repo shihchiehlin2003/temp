@@ -11,17 +11,17 @@
         <TextBox x:Name="txtcm" HorizontalAlignment="Left" Margin="160,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81" KeyUp="txtcm_KeyUp"/>
         <Label Content="公分" HorizontalAlignment="Left" Margin="160,93,0,0" VerticalAlignment="Top"/>
         <Label Content="公尺" HorizontalAlignment="Left" Margin="327,93,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="561,93,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="160,212,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="327,212,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="561,217,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="160,297,0,0" VerticalAlignment="Top"/>
+        <Label Content="公里" HorizontalAlignment="Left" Margin="561,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="英吋" HorizontalAlignment="Left" Margin="160,212,0,0" VerticalAlignment="Top"/>
+        <Label Content="英呎" HorizontalAlignment="Left" Margin="327,212,0,0" VerticalAlignment="Top"/>
+        <Label Content="碼" HorizontalAlignment="Left" Margin="561,217,0,0" VerticalAlignment="Top"/>
+        <Label Content="說明文字" HorizontalAlignment="Left" Margin="160,297,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtm" HorizontalAlignment="Left" Margin="327,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox HorizontalAlignment="Left" Margin="561,118,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox HorizontalAlignment="Left" Margin="160,242,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox HorizontalAlignment="Left" Margin="327,247,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox HorizontalAlignment="Left" Margin="561,247,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox HorizontalAlignment="Left" Margin="160,327,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
+        <TextBox x:Name="txtkm" HorizontalAlignment="Left" Margin="561,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
+        <TextBox x:Name="txtin" HorizontalAlignment="Left" Margin="160,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
+        <TextBox x:Name="txtft" HorizontalAlignment="Left" Margin="327,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
+        <TextBox x:Name="txtyard" HorizontalAlignment="Left" Margin="561,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
+        <TextBox HorizontalAlignment="Left" Margin="160,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
 
     </Grid>
 </Window>

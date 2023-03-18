@@ -38,7 +38,10 @@ namespace temp
             doucm = Convert.ToDouble(txtcm.Text); //從txtCM輸入文字框取得輸入的文字，並且轉換成double的資料型態
 
             txtm.Text = string.Format("{0:0.##########}", doucm / 100);
-            //將douCM的數值除以100，也就是從公分轉換成公尺
+            txtkm.Text = string.Format("{0:0.##########}", doucm / 100000);
+            txtin.Text = string.Format("{0:0.##########}", doucm / 2.54);
+            txtft.Text = string.Format("{0:0.##########}", doucm / 30.48);
+            txtyard.Text = string.Format("{0:0.##########}", doucm / 91.44);
 
         }
 
