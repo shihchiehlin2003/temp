@@ -27,7 +27,12 @@ namespace temp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            txtcm.Text = "";
+            txtm.Text = "";
+            txtkm.Text = "";
+            txtin.Text = "";
+            txtft.Text = "";
+            txtyard.Text = "";
         }
 
         private void txtcm_KeyUp(object sender, KeyEventArgs e)
