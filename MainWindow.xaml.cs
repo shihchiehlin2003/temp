@@ -28,22 +28,22 @@ namespace temp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            txtcm.Text = "";
-            txtm.Text = "";
-            txtkm.Text = "";
-            txtin.Text = "";
-            txtft.Text = "";
-            txtyard.Text = "";
+            txtmg.Text = "";
+            txtg.Text = "";
+            txtkg.Text = "";
+            txtt.Text = "";
+            txtoz.Text = "";
+            txtlp.Text = "";
         }
 
         // 全域變數
         string strInput; // 字串型態的strInput變數
         double douOutput; // double浮點數型態的douOutput變數
 
-        private void txtcm_KeyUp(object sender, KeyEventArgs e)
+        private void txtmg_KeyUp(object sender, KeyEventArgs e)
         {
 
-            strInput = txtcm.Text; // 將txtCM文字框的值放入strInput變數
+            strInput = txtmg.Text;
 
             // 判斷式，如果能夠以double.TryParse成功轉型，那才做數值的計算
             if (double.TryParse(strInput, out douOutput) == true)
@@ -54,21 +54,21 @@ namespace temp
             {
                 // 如果無法轉型，則是在說明文字中顯示錯誤訊息，並且將txtCM文字框清除
                 txtinfo.Text = "請輸入數字";
-                txtcm.Text = "";
+                txtmg.Text = "";
             }           
         }
 
-        private void txtm_KeyUp(object sender, KeyEventArgs e)
+        private void txtg_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtm.Text;
+            strInput = txtg.Text;
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(1, douOutput * 100);
+                caculateAnswer(1, douOutput * 1000);
             }
             else
             {
                 txtinfo.Text = "請輸入數字";
-                txtm.Text = "";
+                txtg.Text = "";
             }
         }
 
@@ -76,72 +76,72 @@ namespace temp
         void caculateAnswer(int _kind, double _value)
         {
             if (_kind != 0)
-                txtcm.Text = string.Format("{0:0.##########}", _value);
+                txtmg.Text = string.Format("{0:0.##########}", _value);
             if (_kind != 1)
-                txtm.Text = string.Format("{0:0.##########}", _value / 100);
+                txtg.Text = string.Format("{0:0.##########}", _value / 1000);
             if (_kind != 2)
-                txtkm.Text = string.Format("{0:0.##########}", _value / 100000);
+                txtkg.Text = string.Format("{0:0.##########}", _value / 100000);
             if (_kind != 3)
-                txtin.Text = string.Format("{0:0.##########}", _value / 2.54);
+                txtt.Text = string.Format("{0:0.##########}", _value / 1000000000);
             if (_kind != 4)
-                txtft.Text = string.Format("{0:0.##########}", _value / 30.48);
+                txtoz.Text = string.Format("{0:0.##########}", _value / 28349.523125);
             if (_kind != 5)
-                txtyard.Text = string.Format("{0:0.##########}", _value / 91.44);
+                txtlp.Text = string.Format("{0:0.##########}", _value / 453.59237);
         }
 
-        private void txtkm_KeyUp(object sender, KeyEventArgs e)
+        private void txtkg_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtkm.Text;
+            strInput = txtkg.Text;
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(2, douOutput * 100000);
+                caculateAnswer(2, douOutput * 1000000);
             }
             else
             {
                 txtinfo.Text = "請輸入數字";
-                txtkm.Text = "";
+                txtkg.Text = "";
             }
         }
 
-        private void txtin_KeyUp(object sender, KeyEventArgs e)
+        private void txtt_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtin.Text;
+            strInput = txtt.Text;
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(3, douOutput * 2.54);
+                caculateAnswer(3, douOutput * 1000000000);
             }
             else
             {
                 txtinfo.Text = "請輸入數字";
-                txtin.Text = "";
+                txtt.Text = "";
             }
         }
 
-        private void txtft_KeyUp(object sender, KeyEventArgs e)
+        private void txtoz_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtft.Text;
+            strInput = txtoz.Text;
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(4, douOutput * 30.48);
+                caculateAnswer(4, douOutput * 28349.523125);
             }
             else
             {
                 txtinfo.Text = "請輸入數字";
-                txtft.Text = "";
+                txtoz.Text = "";
             }
         }
 
-        private void txtyard_KeyUp(object sender, KeyEventArgs e)
+        private void txtlp_KeyUp(object sender, KeyEventArgs e)
         {
-            strInput = txtyard.Text;
+            strInput = txtlp.Text;
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(5, douOutput * 91.44);
+                caculateAnswer(5, douOutput * 453.59237);
             }
             else
             {
                 txtinfo.Text = "請輸入數字";
-                txtyard.Text = "";
+                txtlp.Text = "";
             }
         }
     }
