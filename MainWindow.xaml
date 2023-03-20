@@ -16,11 +16,11 @@
         <Label Content="英呎" HorizontalAlignment="Left" Margin="327,212,0,0" VerticalAlignment="Top"/>
         <Label Content="碼" HorizontalAlignment="Left" Margin="561,217,0,0" VerticalAlignment="Top"/>
         <Label Content="說明文字" HorizontalAlignment="Left" Margin="160,297,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtm" HorizontalAlignment="Left" Margin="327,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox x:Name="txtkm" HorizontalAlignment="Left" Margin="561,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox x:Name="txtin" HorizontalAlignment="Left" Margin="160,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox x:Name="txtft" HorizontalAlignment="Left" Margin="327,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox x:Name="txtyard" HorizontalAlignment="Left" Margin="561,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
+        <TextBox x:Name="txtm" HorizontalAlignment="Left" Margin="327,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81" KeyUp="txtm_KeyUp"/>
+        <TextBox x:Name="txtkm" HorizontalAlignment="Left" Margin="561,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81" KeyUp="txtkm_KeyUp"/>
+        <TextBox x:Name="txtin" HorizontalAlignment="Left" Margin="160,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81" KeyUp="txtin_KeyUp"/>
+        <TextBox x:Name="txtft" HorizontalAlignment="Left" Margin="327,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81" KeyUp="txtft_KeyUp"/>
+        <TextBox x:Name="txtyard" HorizontalAlignment="Left" Margin="561,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81" KeyUp="txtyard_KeyUp"/>
         <TextBox x:Name="txtinfo" HorizontalAlignment="Left" Margin="160,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
 
     </Grid>
