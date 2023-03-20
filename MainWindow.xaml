@@ -21,7 +21,7 @@
         <TextBox x:Name="txtin" HorizontalAlignment="Left" Margin="160,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
         <TextBox x:Name="txtft" HorizontalAlignment="Left" Margin="327,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
         <TextBox x:Name="txtyard" HorizontalAlignment="Left" Margin="561,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
-        <TextBox HorizontalAlignment="Left" Margin="160,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
+        <TextBox x:Name="txtinfo" HorizontalAlignment="Left" Margin="160,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.245,0.81"/>
 
     </Grid>
 </Window>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,20 +36,33 @@ namespace temp
             txtyard.Text = "";
         }
 
+        // 全域變數
+        string strInput; // 字串型態的strInput變數
+        double douOutput; // double浮點數型態的douOutput變數
+
         private void txtcm_KeyUp(object sender, KeyEventArgs e)
         {
 
-            double doucm; //宣告一個double變數，變數名稱叫douCM
+            strInput = txtcm.Text; // 將txtCM文字框的值放入strInput變數
 
-            doucm = Convert.ToDouble(txtcm.Text); //從txtCM輸入文字框取得輸入的文字，並且轉換成double的資料型態
-
-            txtm.Text = string.Format("{0:0.##########}", doucm / 100);
-            txtkm.Text = string.Format("{0:0.##########}", doucm / 100000);
-            txtin.Text = string.Format("{0:0.##########}", doucm / 2.54);
-            txtft.Text = string.Format("{0:0.##########}", doucm / 30.48);
-            txtyard.Text = string.Format("{0:0.##########}", doucm / 91.44);
-
+            // 判斷式，如果能夠以double.TryParse成功轉型，那才做數值的計算
+            if (double.TryParse(strInput, out douOutput) == true)
+            {
+                txtm.Text = string.Format("{0:0.##########}", douOutput / 100);
+                txtkm.Text = string.Format("{0:0.##########}", douOutput / 100000);
+                txtin.Text = string.Format("{0:0.##########}", douOutput / 2.54);
+                txtft.Text = string.Format("{0:0.##########}", douOutput / 30.48);
+                txtyard.Text = string.Format("{0:0.##########}", douOutput / 91.44);
+            }
+            else
+            {
+                // 如果無法轉型，則是在說明文字中顯示錯誤訊息，並且將txtCM文字框清除
+                txtinfo.Text = "請輸入數字";
+                txtcm.Text = "";
+            }
         }
 
     }
-}
+
+    }
+
